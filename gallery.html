@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Professor - Video Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="https://youtube.com/yourchannel" target="_blank">Mr. Professor</a></div>
+        <img src="Your paragraph text.png" alt="Channel Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Video Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h2>Featured Videos</h2>
+        <div class="video-gallery">
+            <!-- Sample video items -->
+            <div class="video-item">
+                <a href="https://youtube.com/shorts/awpfitp7XtM?si=9W5SiIL9S-Awp3TT" target="_blank">
+                    <img src="a-photo-of-a-compact-modern-and-stylish-portable-h-rNKQXwr0STeSlQDpjrO2Lw-IK5LS8KoTAiFirD2tUABpQ.jpeg" alt="Video 1">
+                    <p>Have you ever seen a portable House🏡!</p>
+                </a>
+            </div>
+            <div class="video-item">
+                <a href="https://youtube.com/shorts/MYY5XTevZXU?si=rC3wycyl6OTQ86-X" target="_blank">
+                    <img src="a-close-up-shot-of-a-sleek-car-s-rear-with-a-uniqu-kLH-DHSxTGKizz7MJaYmVA-3VIz7nxJT7eXSrc31tJDYQ.jpeg" alt="Video 1">
+                    <p>I bet you won't get it!!</p>
+                </a>
+            </div>
+            <div class="video-item">
+                <a href="https://youtube.com/shorts/ndiPv5zZVE4?si=UQsYZ9Tzi9xjlNHU" target="_blank">
+                    <img src="a-photo-of-a-naval-ship-with-a-helicopter-parked-o-9HfQCmSwS36kvA8XsEaHng-bfMyFZd4R6SWQF4PYrFSVg.jpeg" alt="Video 1">
+                    <p>Where would the helicopters kept in the ship🚁!</p>
+                </a>
+            </div>
+            <div class="video-item">
+                <a href="https://youtube.com/shorts/WPpHrZvBFts?si=BDIzDJFLWs3ize9b" target="_blank">
+                    <img src="a-sleek-futuristic-evtol-flying-car-hovering-above-XXk9sWVrQ-CTp85AVdWB0Q-jj6Vx11oSGmUiZW4sAtq0w.jpeg" alt="Video 1">
+                    <p>How does an eVOTL car flies?!</p>
+                </a>
+            </div>
+            <div class="video-item">
+                <a href="https://www.youtube.com/shorts/Bav46Vw9LAo" target="_blank">
+                    <img src="a-vibrant-thumbnail-showcasing-a-futuristic-music--I4v8ofwqQuOmH1VQeVi8BA-4bLstwNpRq2DPdQJkT5Y8g.jpeg" alt="Video 1">
+                    <p>Create your own music in seconds- SUNO Ai!</p>
+                </a>
+            </div>
+            <div class="video-item">
+                <a href="https://youtube.com/shorts/-TxK1cQ6vAU?feature=share" target="_blank">
+                    <img src="a-tech-themed-thumbnail-with-a-clean-design-there--avV9xaA-RMid27QJkA7ozQ-useKVa1fRqa3WcKKuaW5VQ.jpeg" alt="Video 1">
+                    <p>Launch your own website for free using github!</p>
+                </a>
+            </div>
+            <div class="video-item">
+                <a href="https://youtube.com/shorts/2xnHkvxJyrk?feature=share" target="_blank">
+                    <img src="a-thumbnail-with-a-realistic-digital-avatar-with-a-TJ2HmymkRam4tX2fWju5eQ-Ff92_mXMT5Onp-LsJNgC0Q.jpeg" alt="Video 1">
+                    <p>Create your lifelike Ai avatar-Akool Ai!</p>
+                </a>
+            </div>
+            <div class="video-item">
+                <a href="https://youtube.com/shorts/D_IDs9pyrtM?feature=share" target="_blank">
+                    <img src="a-bold-thumbnail-with-a-vibrant-color-scheme-showi--xAqJaLSTmWqomzN1NyBzw-L7I-BAlBRZq8ZLJI-oxsCw.jpeg" alt="Video 1">
+                    <p>Create stunning presentations in seconds!</p>
+                </a>
+            </div>
+            <!-- Repeat similar video-item divs with different thumbnails and links -->
+        </div>
+    </div>
+    <!-- Scroll to Top Button HTML -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">&#8679;</button>
+
+
+
+<!-- CSS for the Scroll to Top Button -->
+<style>
+    #scrollTopBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed position */
+        bottom: 20px; /* Place it at the bottom */
+        right: 20px; /* Place it to the right */
+        z-index: 99; /* Ensure it's on top of other elements */
+        border: none;
+        outline: none;
+        background-color: #001e82;
+        color: white;
+        cursor: pointer;
+        padding: 12px;
+        border-radius: 50%;
+        font-size: 18px;
+    }
+
+    #scrollTopBtn:hover {
+        background-color: #649ac1;
+    }
+</style>
+
+<!-- JavaScript for Scroll Behavior -->
+<script>
+    // Show the button when user scrolls down 200px
+    window.onscroll = function() { toggleScrollTopButton() };
+
+    function toggleScrollTopButton() {
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    }
+
+    // Scroll to the top of the document when clicked
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+    <!-- Footer HTML -->
+<footer style="background-color: black; color: white; padding: 20px; text-align: center;">
+    <p>&copy; 2024 Mr. Professor. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

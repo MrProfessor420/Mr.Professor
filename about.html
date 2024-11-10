@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Professor - About</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="https://youtube.com/yourchannel" target="_blank">Mr. Professor</a></div>
+        <img src="Your paragraph text.png" alt="Channel Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Video Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h2>About Mr. Professor</h2>
+        
+        <div class="section">
+            <h3>Our Mission</h3>
+            <p>The mission of Mr. Professor is to spark curiosity, inspire learning, and empower viewers with unique insights across a range of topics, from cutting-edge AI tools and life hacks to geopolitics, psychology, and curious facts about the world. We aim to make complex concepts accessible and enjoyable, presenting information in ways that are engaging, concise, and visually compelling. By blending education with entertainment, our channel seeks to build a community of knowledge seekers eager to understand, innovate, and explore new ideas. Join us as we dive into stories, facts, and hacks that make everyday learning a transformative experience.</p>
+        </div>
+        
+        <div class="section">
+            <h3>AI Tools</h3>
+            <p>The AI Tools section on Mr. Professor is dedicated to showcasing innovative, practical, and transformative AI tools that enhance daily life, streamline tasks, and fuel creativity. From voice cloning to AI-powered music creation and website building, we explore accessible and impactful tools for everyone, regardless of technical background. Our goal is to simplify the latest advancements in artificial intelligence, demonstrating their real-world applications in quick, easy-to-follow videos. Whether you're a tech enthusiast, a creator, or just curious about AI's potential, this section offers insights into the digital tools shaping the future and helping viewers unlock new possibilities.</p>
+        </div>
+
+        <div class="section">
+            <h3>Geopolitics</h3>
+            <p>The Geopolitics section on Mr. Professor delves into the dynamic and complex world of global politics, exploring the forces that shape nations, borders, and international relations. We break down key geopolitical events, trends, and conflicts, offering clear and concise analysis to help viewers understand the intricate web of power, economics, and diplomacy. From rising superpowers to regional tensions and global alliances, our videos offer insights into the strategies, decisions, and impacts that influence the world stage. Whether you're a policy enthusiast or just curious about current events, this section provides valuable context to the world around us.</p>
+        </div>
+
+        <div class="section">
+            <h3>Life Hacks</h3>
+            <p>The Life Hacks section on Mr. Professor is designed to provide practical, clever solutions to everyday problems, making life easier and more efficient. From time-saving tips and organization strategies to creative shortcuts and productivity boosters, we cover a wide range of hacks that can simplify routines and enhance your daily experience. Whether it’s optimizing your workspace, improving mental well-being, or mastering tech tricks, our videos offer actionable advice you can apply immediately. Our mission is to help viewers navigate life’s challenges with smarter, more effective methods, empowering them to get the most out of each day.</p>
+        </div>
+    </div>
+    <!-- Scroll to Top Button HTML -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">&#8679;</button>
+
+<!-- Footer -->
+<footer style="background-color: black; color: white; padding: 20px; text-align: center;">
+    <p>&copy; 2024 Mr. Professor. All rights reserved.</p>
+</footer>
+
+<!-- CSS for the Scroll to Top Button -->
+<style>
+    #scrollTopBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed position */
+        bottom: 20px; /* Place it at the bottom */
+        right: 20px; /* Place it to the right */
+        z-index: 99; /* Ensure it's on top of other elements */
+        border: none;
+        outline: none;
+        background-color: #013672;
+        color: white;
+        cursor: pointer;
+        padding: 12px;
+        border-radius: 50%;
+        font-size: 18px;
+    }
+
+    #scrollTopBtn:hover {
+        background-color: #85b6e3;
+    }
+</style>
+
+<!-- JavaScript for Scroll Behavior -->
+<script>
+    // Show the button when user scrolls down 200px
+    window.onscroll = function() { toggleScrollTopButton() };
+
+    function toggleScrollTopButton() {
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    }
+
+    // Scroll to the top of the document when clicked
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Professor - Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="https://youtube.com/@mr.professor-v7f?si=DC92sxxop7ekPN3v">Subscribe</a></div>
+        <img src="Your paragraph text.png" alt="Channel Logo">
+    
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Video Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h1>Welcome to Mr. Professor's Youtube Channel 👨🏻‍🏫</h1>
+        <img src="Your paragraph text.png" alt="Channel Logo">
+        <p>🌎Dive into a world where complex topics are broken down into simple, engaging stories—whether it’s the latest in AI, fascinating world events, intriguing psychology, or unique life hacks. Our channel doesn’t just inform; it’s crafted to fuel curiosity, spark ideas, and give you practical insights you can use. Unlike other channels, Mr. Professor presents content in a way that’s crisp, relatable, and directly valuable to you. So, if you're looking for fresh, fun, and mind-expanding content, you’re in the right place!</p>
+       <P>🧭 Navigating through Mr. Professor is easy and intuitive! 🧭 Start on our homepage to get the latest videos and featured content. Use the navigation bar to explore specific sections:
+       </P>
+        <p>1️⃣Video Gallery: Access our full library of engaging content on diverse topics like AI, psychology, and life hacks.</p>
+        <p>2️⃣Contact Us: Have questions or suggestions? Reach out through contact section for a direct line to the team.</p>
+    </div>
+    <!-- Scroll to Top Button HTML -->
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">&#8679;</button>
+
+<!-- CSS for the Scroll to Top Button -->
+<style>
+    #scrollTopBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed position */
+        bottom: 20px; /* Place it at the bottom */
+        right: 20px; /* Place it to the right */
+        z-index: 99; /* Ensure it's on top of other elements */
+        border: none;
+        outline: none;
+        background-color: #013a63;
+        color: white;
+        cursor: pointer;
+        padding: 12px;
+        border-radius: 50%;
+        font-size: 18px;
+    }
+
+    #scrollTopBtn:hover {
+        background-color: #41769e;
+    }
+</style>
+
+<!-- JavaScript for Scroll Behavior -->
+<script>
+    // Show the button when user scrolls down 200px
+    window.onscroll = function() { toggleScrollTopButton() };
+
+    function toggleScrollTopButton() {
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    }
+
+    // Scroll to the top of the document when clicked
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+    <!-- Footer HTML -->
+<footer style="background-color: black; color: white; padding: 20px; text-align: center;">
+    <p>&copy; 2024 Mr. Professor. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
